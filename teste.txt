@@ -1,24 +1,4 @@
-<!DOCTYPE html>
-<html>
-<!-- <head>
-        <title>Tabela de Contatos setoriais</title>
-        <style>
-          .texto-negrito {
-            font-weight: bold;
-          }
-          tr:nth-child(even) {
-  background-color: #f2f2f2; /* cor para as linhas pares */
-}
-          tr:nth-child(odd) {
-  background-color: #ffffff; /* cor para as linhas ímpares */
-}
-        </style>
-      </head> -->
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-
-<body>
-
-  Nessa página você acessa o catálogo dos contatos dos setores da Universidade Federal de Juiz de Fora e os contatos de instituições ligadas à universidade.
+Nessa página você acessa o catálogo dos contatos dos setores da Universidade Federal de Juiz de Fora e os contatos de instituições ligadas à universidade.
 
 A UFJF não fornece telefones ou e-mails particulares de discentes ou de servidores.
 
@@ -26,7 +6,7 @@ Se preferir, faça uma busca digitando <strong>Ctrl+F</strong> (Windows, Linux e
 
 <table class="table-responsive table-striped table-bordered" style="font-size: 13px" width="100%">
 
-    <div id="cabecalho">
+    <div id="setores" title="cabecalho">
       <tr>
         <th style="vertical-align: middle;text-align: center;width: 200px">SETOR</th>
         <th style="vertical-align: middle;text-align: center;width: 200px">SUBSETOR</th>
@@ -38,7 +18,7 @@ Se preferir, faça uma busca digitando <strong>Ctrl+F</strong> (Windows, Linux e
     </div>
     
 
-    <div id="facc" data-email_principal="secretaria.adm@facc.ufjf.br">
+    <div id="setores" title="facc">
       <tr>
         <td rowspan="6" style="vertical-align: middle;font-weight: bold" class="nome">ADMINISTRAÇÃO E CIÊNCIAS CONTÁBEIS - FACC</td>
         <td style="vertical-align: middle">Secretaria FACC</td>
@@ -80,7 +60,7 @@ Se preferir, faça uma busca digitando <strong>Ctrl+F</strong> (Windows, Linux e
     </div>
           
 
-    <div id="almoxarifado-central" data-email_principal="almoxarifado.central@ufjf.br">
+    <div id="setores" title="almoxarifado-central">
       <tr>
         <td style="vertical-align: middle;font-weight: bold" class="nome">ALMOXARIFADO CENTRAL</td>
         <td>Gerência de Estoque (Almoxarifado Central)</td>
@@ -92,7 +72,7 @@ Se preferir, faça uma busca digitando <strong>Ctrl+F</strong> (Windows, Linux e
     </div>
 
 
-    <div id="apes-jf" data-email_principal="faleconosco@apesjf.org.br">
+    <div id="setores" title="apes-jf">
       <tr>
         <td rowspan="5" style="vertical-align: middle;font-weight: bold">APES JF - Associação dos Professores de Ensino Superior de Juiz de Fora</td>
         <td style="vertical-align: middle;vertical-align: middle">Secretaria</td>
@@ -124,7 +104,7 @@ Se preferir, faça uma busca digitando <strong>Ctrl+F</strong> (Windows, Linux e
     </div>
 
 
-    <div id="arquitetura" data-email_principal="secretaria.fau@ufjf.br">
+    <div id="setores" title="arquitetura">
       <tr>
         <td rowspan="4" style="vertical-align: middle;font-weight: bold">ARQUITETURA E URBANISMO</td>
         <td>Secretaria</td>
@@ -151,7 +131,7 @@ Se preferir, faça uma busca digitando <strong>Ctrl+F</strong> (Windows, Linux e
     </div>
 
       
-    <div id="arquivo-central" data-email_principal="gestao.documentos@ufjf.br">
+    <div id="setores" title="arquivo-central">
       <tr>
         <td rowspan="2" style="vertical-align: middle;font-weight: bold">ARQUIVO CENTRAL</td>
         <td>Coordenação Sistema de Arquivos (Reitoria/Campus)</td>
@@ -168,7 +148,7 @@ Se preferir, faça uma busca digitando <strong>Ctrl+F</strong> (Windows, Linux e
     </div>
 
 
-    <div id="auditoria-interna" data-email_principal="auditoriainterna@ufjf.br">
+    <div id="setores" title="auditoria-interna">
       <tr>
         <td style="vertical-align: mtitledle;font-weight: bold">AUDITORIA INTERNA - Audin/UFJF</td>
         <td>Coordenação Sistema de Arquivos (Reitoria/Campus)</td>
@@ -180,7 +160,7 @@ Se preferir, faça uma busca digitando <strong>Ctrl+F</strong> (Windows, Linux e
     </div>
 
 
-    <div id="bacharelado-em-artes-visuais" data-email_principal="secretaria.iad@ufjf.br">
+    <div id="setores" title="bacharelado-em-artes-visuais">
       <tr>
         <td colspan="2" style="vertical-align: middle;font-weight: bold">BACHARELADO EM ARTES VISUAIS</td>
         <td style="text-align: center;vertical-align: middle"><a href="http://www.ufjf.br/licenciaturavisuais/">www.ufjf.br/licenciaturavisuais</a></td>
@@ -191,7 +171,7 @@ Se preferir, faça uma busca digitando <strong>Ctrl+F</strong> (Windows, Linux e
     </div>
 
 
-    <div id="licenciatura-artes-visuais" data-email_principal="secretaria.iad@ufjf.br">
+    <div id="setores" title="licenciatura-artes-visuais">
       <tr>
         <td colspan="2" style="vertical-align: middle;font-weight: bold">LICENCIATURA EM ARTES VISUAIS</td>
         <td style="text-align: center;vertical-align: middle"><a href="http://www.ufjf.br/artesvisuais/">www.ufjf.br/artesvisuais</a></td>
@@ -202,7 +182,7 @@ Se preferir, faça uma busca digitando <strong>Ctrl+F</strong> (Windows, Linux e
     </div> 
     
     
-    <div id="bacharelado-em-cinema" data-email_principal="secretaria.iad@ufjf.br">
+    <div id="setores" title="bacharelado-em-cinema">
       <tr>
         <td colspan="2" style="vertical-align: middle;font-weight: bold">BACHARELADO EM CINEMA E AUDIOVISUAL</td>
         <td style="text-align: center;vertical-align: middle"><a href="http://www.ufjf.br/cinema/">www.ufjf.br/cinema</a></td>
@@ -213,7 +193,7 @@ Se preferir, faça uma busca digitando <strong>Ctrl+F</strong> (Windows, Linux e
     </div>
     
     
-    <div id="bacherelado-em-moda" data-email_principal="secretaria.iad@ufjf.br">
+    <div id="setores" title="bacherelado-em-moda">
       <tr>
         <td colspan="2" style="vertical-align: middle;font-weight: bold">BACHARELADO EM MODA</td>
         <td style="text-align: center;vertical-align: middle"><a href="http://www.ufjf.br/moda/">www.ufjf.br/moda</a></td>
@@ -224,7 +204,7 @@ Se preferir, faça uma busca digitando <strong>Ctrl+F</strong> (Windows, Linux e
     </div>
 
 
-    <div id="bacharelado-em-design"  data-email_principal="secretaria.iad@ufjf.br">
+    <div id="setores" title="bacharelado-em-design">
       <tr>
         <td colspan="2" style="vertical-align: middle;font-weight: bold">BACHARELADO EM DESIGN</td>
         <td style="text-align: center;vertical-align: middle"><a href="http://www.ufjf.br/design/">www.ufjf.br/design</a></td>
@@ -235,7 +215,7 @@ Se preferir, faça uma busca digitando <strong>Ctrl+F</strong> (Windows, Linux e
     </div>
 
       
-    <div id="bi-em-artes-e-design" data-email_principal="secretaria.iad@ufjf.br">
+    <div id="setores" title="bi-em-artes-e-design">
       <tr>
         <td rowspan="2" style="vertical-align: middle;font-weight: bold">BACHARELADO INTERDISCIPLINAR EM ARTES E DESIGN</td>
         <td>Secretaria</td>
@@ -252,7 +232,7 @@ Se preferir, faça uma busca digitando <strong>Ctrl+F</strong> (Windows, Linux e
     </div>
 
 
-    <div id="bi-em-ciencias-humanas" data-email_principal="coord.bach@ufjf.br">
+    <div id="setores" title="bi-em-ciencias-humanas">
       <tr>
         <td colspan="2" style="vertical-align: middle;font-weight: bold">BACHARELADO INTERDISCIPLINAR EM CIÊNCIAS HUMANAS</td>
         <td style="text-align: center;vertical-align: middle"><a href="https://www.ufjf.br/bach/">www.ufjf.br/bach</a></td>
@@ -263,7 +243,7 @@ Se preferir, faça uma busca digitando <strong>Ctrl+F</strong> (Windows, Linux e
     </div>
 
       
-    <div id="biblioteca" data-email_principal="atendimento.cdc@ufjf.br">
+    <div id="setores" title="biblioteca">
       <tr>
         <td rowspan="3" style="vertical-align: middle;font-weight: bold">BIBLIOTECA UNIVERSITÁRIA - Centro de Difusão do Conhecimento – CDC</td>
         <td style="text-align: center;vertical-align: middle">Atendimento ao usuário</td>
@@ -296,7 +276,7 @@ Se preferir, faça uma busca digitando <strong>Ctrl+F</strong> (Windows, Linux e
     </div>  
 
 
-    <div id="caed" data-email_principal="faleconosco@fundacaocaed.org.br">
+    <div id="setores" title="caed">
       <tr>
         <td rowspan="3" style="vertical-align: middle;font-weight: bold">CAED - Centro de Políticas Públicas e Avaliação da Educação</td>
         <td>Unidade Dom Orione</td>
@@ -318,7 +298,7 @@ Se preferir, faça uma busca digitando <strong>Ctrl+F</strong> (Windows, Linux e
     </div>
 
 
-    <div id="casa-helenira-preta" data-email_principal="casa.helenirarezende@ufjf.br">
+    <div id="setores" title="casa-helenira-preta">
       <tr>
         <td style="vertical-align: middle;font-weight: bold">CASA HELENIRA PRETA</td>
         <td style="vertical-align: middle"> Localizada na Av. Barão do Rio Branco, 3372 ou pela Rua Severino Meireles, 260 - Passos - Juiz de Fora</td>
@@ -330,7 +310,7 @@ Se preferir, faça uma busca digitando <strong>Ctrl+F</strong> (Windows, Linux e
     </div>
 
 
-    <div id="cdara" title="cdara@ufjf.br">
+    <div id="setores" title="cdara">
       <tr>
         <td rowspan="6" style="vertical-align: middle;font-weight: bold">CDARA</td>
         <td style="vertical-align: middle">Secretaria</td>
@@ -364,7 +344,7 @@ Se preferir, faça uma busca digitando <strong>Ctrl+F</strong> (Windows, Linux e
     </div>
 
 
-    <div id="cead" data-email_principal="secretaria.cead@ufjf.br">
+    <div id="setores" title="cead">
       <tr>
         <td style="vertical-align: middle;font-weight: bold">CEAD - Centro de Educação à Distância</td>
         <td style="vertical-align: middle">Centro de Educação à Distância</td>
@@ -376,7 +356,7 @@ Se preferir, faça uma busca digitando <strong>Ctrl+F</strong> (Windows, Linux e
     </div>
 
 
-    <div id="cecom" data-email_principal="cecomufjf@gmail.com">
+    <div id="setores" title="cecom">
       <tr>
         <td style="vertical-align: middle;font-weight: bold">CECOM - Centro de Conservação da Memória</td>
         <td style="vertical-align: middle">Centro de Conservação da Memória</td>
@@ -388,7 +368,7 @@ Se preferir, faça uma busca digitando <strong>Ctrl+F</strong> (Windows, Linux e
     </div>
 
 
-    <div id="cat" data-email_principal="faleconosco@ufjf.br">
+    <div id="setores" title="cat">
       <tr>
         <td style="vertical-align: middle;font-weight: bold">CENTRAL DE ATENDIMENTO - CAT</td>
         <td style="vertical-align: middle">Central de Atendimento - UFJF - Campus sede</td>
@@ -400,7 +380,7 @@ Se preferir, faça uma busca digitando <strong>Ctrl+F</strong> (Windows, Linux e
     </div>
 
 
-    <div id="centro_de_ciencias" data-email_principal="centrodeciencias@ufjf.br">
+    <div id="setores" title="centro_de_ciencias">
       <tr>
         <td style="vertical-align: middle;font-weight: bold">CENTRO DE CIÊNCIAS</td>
         <td style="vertical-align: middle">Centro de Ciências</td>
@@ -412,7 +392,7 @@ Se preferir, faça uma busca digitando <strong>Ctrl+F</strong> (Windows, Linux e
     </div>
 
 
-    <div id="ciencia_da_computacao" data-email_principal="coord.computacao@ufjf.br">
+    <div id="setores" title="ciencia_da_computacao">
       <tr>
         <td rowspan="2" style="vertical-align: middle;font-weight: bold">CIÊNCIA DA COMPUTAÇÃO</td>
         <td style="vertical-align: middle">Coordenação do curso</td>
@@ -430,7 +410,7 @@ Se preferir, faça uma busca digitando <strong>Ctrl+F</strong> (Windows, Linux e
     </div>
 
 
-    <div id="ciencia_da_religiao" data-email_principal="coord.religiao@ufjf.br">
+    <div id="setores" title="ciencia_da_religiao">
       <tr>
         <td colspan="2" style="vertical-align: middle;font-weight: bold">CIÊNCIA DA RELIGIÃO</td>
         <td style="vertical-align: middle;text-align: center"><a href="http://www.ufjf.br/graduacaocre" rel="noopener" target="_blank">www.ufjf.br/graduacaocre</a></td>
@@ -441,13 +421,13 @@ Se preferir, faça uma busca digitando <strong>Ctrl+F</strong> (Windows, Linux e
     </div>
 
 
-    <div id="ciencias_exatas" data-email_principal="secretaria.ice@ice.ufjf.br">
+    <div id="setores" title="ciencias_exatas">
       <tr>
         <td rowspan="3" style="vertical-align: middle;font-weight: bold">CIÊNCIAS EXATAS</td>
         <td style="vertical-align: middle">Secretaria</td>
         <td rowspan="3" style="vertical-align: middle;text-align: center"><a href="https://www2.ufjf.br/ice/" rel="noopener" target="_blank">www2.ufjf.br/ice</a></td>
         <td style="vertical-align: middle;text-align: center">(32) 2102-3301<br>(32) 2102-3302</td>
-        <td style="vertical-align: middle;text-align: center"><a href="mailto:secretaria.ice@ice.ufjf.br">secretaria.ice@ice.ufjf.br</a></td>
+        <td style="vertical-align: middle;text-align: center"><a href="mailto:secretaria.ice@ice.ufjf.br">secretaria.ice@ice.ufjf.br </a></td>
         <td></td>
       </tr>
       <tr>
@@ -465,7 +445,7 @@ Se preferir, faça uma busca digitando <strong>Ctrl+F</strong> (Windows, Linux e
     </div>
 
 
-    <div id="ciencias_sociais" data-email_principal="coord.cienciassociais@ufjf.br">
+    <div id="setores" title="ciencias_sociais">
       <tr>
         <td rowspan="2" style="vertical-align: middle;font-weight: bold">CIÊNCIAS SOCIAIS</td>
         <td style="vertical-align: middle">Coordenação de Curso</td>
@@ -483,7 +463,7 @@ Se preferir, faça uma busca digitando <strong>Ctrl+F</strong> (Windows, Linux e
     </div>
 
 
-    <div id="cine_theatro_central" data-email_principal="cinetheatrocentral@ufjf.br">
+    <div id="setores" title="cine_theatro_central">
       <tr>
         <td rowspan="2" style="vertical-align: middle;font-weight: bold">CINE THEATRO CENTRAL</td>
         <td style="vertical-align: middle">Escritório</td>
@@ -499,7 +479,7 @@ Se preferir, faça uma busca digitando <strong>Ctrl+F</strong> (Windows, Linux e
     </div>
 
 
-    <div id="cis" data-email_principal="comissao.infrasaude@ufjf.br">
+    <div id="setores" title="cis">
       <tr>
         <td colspan="3" style="vertical-align: middle;font-weight: bold">CIS - Comissão de Infraestrutura e Saúde</td>
         <td style="vertical-align: middle;text-align: center">(32) 2102-3983</td>
@@ -509,7 +489,7 @@ Se preferir, faça uma busca digitando <strong>Ctrl+F</strong> (Windows, Linux e
     </div>
 
 
-    <div id="coesf" data-email_principal="coesf@ufjf.br">
+    <div id="setores" title="coesf">
       <tr>
         <td rowspan="7" style="vertical-align: middle;font-weight: bold">COESF</td>
         <td style="vertical-align: middle">Secretaria</td>
@@ -557,7 +537,7 @@ Se preferir, faça uma busca digitando <strong>Ctrl+F</strong> (Windows, Linux e
     </div>
 
 
-    <div id="joaoxxiii" data-email_principal="joaoxxiii@ufjf.br">
+    <div id="setores" title="joaoxxiii">
       <tr>
         <td rowspan="21" style="vertical-align: middle;font-weight: bold">COLÉGIO DE APLICAÇÃO JOÃO XXIII</td>
         <td style="vertical-align: middle">Portaria</td>
@@ -669,7 +649,7 @@ Se preferir, faça uma busca digitando <strong>Ctrl+F</strong> (Windows, Linux e
     </div>
 
 
-    <div id="comissao_de_etica" data-email_principal="comissao.etica@ufjf.br">
+    <div id="setores" title="comissao_de_etica">
       <tr>
       <td style="vertical-align: middle;font-weight: bold">COMISSÃO DE ÉTICA DA UFJF</td>
       <td style="vertical-align: middle">Localizada na Avenida Itamar Franco, 988, Centro - Juiz de Fora – CEP 36010-021</td>
@@ -681,7 +661,7 @@ Se preferir, faça uma busca digitando <strong>Ctrl+F</strong> (Windows, Linux e
     </div>
 
 
-    <div id="ceua" title="ceua.propp@ufjf.br">
+    <div id="setores" title="ceua">
       <tr>
       <td colspan="2" style="vertical-align: middle;font-weight: bold">COMISSÃO DE ÉTICA NO USO DE ANIMAIS - CEUA</td>
       <td style="vertical-align: middle;text-align: center"><a href="http://www.ufjf.br/ceua" rel="noopener" target="_blank">www.ufjf.br/ceua</a></td>
@@ -692,7 +672,7 @@ Se preferir, faça uma busca digitando <strong>Ctrl+F</strong> (Windows, Linux e
     </div>
 
 
-    <div id="comissao-permante-de-pessoal-docente" data-email_principal="secretaria.cppd@ufjf.br">
+    <div id="setores" title="comissao-permante-de-pessoal-docente">
       <tr>
         <td colspan="2" style="vertical-align: middle;font-weight: bold">COMISSÃO PERMANENTE DE PESSOAL DOCENTE - CPPD</td>
         <td style="vertical-align: middle;text-align: center"><a href="http://www.ufjf.br/cppd" rel="noopener" target="_blank">www.ufjf.br/cppd</a></td>
@@ -703,7 +683,7 @@ Se preferir, faça uma busca digitando <strong>Ctrl+F</strong> (Windows, Linux e
     </div>
 
    
-    <div id="comite-de-etica-em-pesquisa-humana" data-email_principal="cep.propp@ufjf.br">
+    <div id="setores" title="comite-de-etica-em-pesquisa-humana">
       <tr>
         <td style="vertical-align: middle;font-weight: bold">COMITÊ DE ÉTICA EM PESQUISA HUMANA</td>
         <td style="vertical-align: middle">Horário de atendimento:<br>Segunda à Quinta: 08:00 às 12:00, 13:00 às 18:00<br>Sexta: 08:00 às 12:00 13:00 às 17:00</td>
@@ -715,7 +695,7 @@ Se preferir, faça uma busca digitando <strong>Ctrl+F</strong> (Windows, Linux e
     </div>
 
 
-    <div id="facom" data-email_principal="secretaria.facom@ufjf.br">
+    <div id="setores" title="facom">
       <tr>
         <td rowspan="6" style="vertical-align: middle;font-weight: bold">COMUNICAÇÃO - Faculdade de Comunicação Social (FACOM)</td>
         <td style="vertical-align: middle">Para assuntos administrativos:<br>Secretaria Geral</td>
@@ -757,7 +737,7 @@ Se preferir, faça uma busca digitando <strong>Ctrl+F</strong> (Windows, Linux e
     </div>
 
 
-    <div id="consu" data-email_principal="secretariageral.reitoria@ufjf.br">
+    <div id="setores" title="consu">
       <tr>
         <td style="vertical-align: middle;font-weight: bold">CONSU - Conselho Superior da Universidade Federal de Juiz de Fora (Consu/UFJF)</td>
         <td style="vertical-align: middle">Secretaria</td>
@@ -769,7 +749,7 @@ Se preferir, faça uma busca digitando <strong>Ctrl+F</strong> (Windows, Linux e
     </div>
 
 
-    <div id="copese" data-email_principal="copese@ufjf.br">
+    <div id="setores" title="copese">
       <tr>
         <td style="vertical-align: middle;font-weight: bold">COPESE - Coordenação Geral de Processos Seletivos</td>
         <td style="vertical-align: middle">Secretaria Geral</td>
@@ -781,7 +761,7 @@ Se preferir, faça uma busca digitando <strong>Ctrl+F</strong> (Windows, Linux e
     </div>
 
 
-    <div id="coral-da-ufjf" data-email_principal="coraldaufjf@gmail.com">
+    <div id="setores" title="coral-da-ufjf">
       <tr>
         <td colspan="3" style="vertical-align: middle;font-weight: bold">CORAL DA UFJF</td>
         <td style="vertical-align: middle;text-align: center">(32) 2102-6305<br>(32) 2102-6306</td>
@@ -791,7 +771,7 @@ Se preferir, faça uma busca digitando <strong>Ctrl+F</strong> (Windows, Linux e
     </div>
 
 
-    <div id="cpa" data-email_principal="cpa.psicologia@ufjf.br">
+    <div id="setores" title="cpa">
       <tr>
         <td colspan="2" style="vertical-align: middle;font-weight: bold">CPA - Centro de Psicologia Aplicada</td>
         <td style="vertical-align: middle;text-align: center"><a href="https://www2.ufjf.br/cpapsicologia" rel="noopener" target="_blank">www2.ufjf.br/cpapsicologia</a></td>
@@ -802,7 +782,7 @@ Se preferir, faça uma busca digitando <strong>Ctrl+F</strong> (Windows, Linux e
     </div>
 
 
-    <div id="critt" data-email_principal="com.critt@ufjf.br">
+    <div id="setores" title="critt">
       <tr>
         <td rowspan="22" style="vertical-align: middle;font-weight: bold">CRITT - Centro Regional de Inovação e Transferência de Tecnologia</td>
         <td style="vertical-align: middle">Geral</td>
@@ -870,6 +850,7 @@ Se preferir, faça uma busca digitando <strong>Ctrl+F</strong> (Windows, Linux e
         <td style="vertical-align: middle">Treinamento</td>
         <td style="vertical-align: middle;text-align: center">(32) 2102-3435<br>Ramal 212</td>
         <td style="vertical-align: middle;text-align: center"><a href="mailto:treina.critt@ufjf.br">treina.critt@ufjf.br</a></td>
+  
       </tr>
       <tr>
         <td colspan="4" style="vertical-align: middle;font-weight: bold">EMPRESAS</td>
@@ -922,7 +903,7 @@ Se preferir, faça uma busca digitando <strong>Ctrl+F</strong> (Windows, Linux e
     </div>
 
 
-    <div id="direito" data-email_principal="ecretaria.direito@ufjf.br">
+    <div id="setores" title="direito">
       <tr>
         <td rowspan="9" style="vertical-align: middle;font-weight: bold">DIREITO</td>
         <td style="vertical-align: middle">Secretaria da Graduação</td>
@@ -979,7 +960,7 @@ Se preferir, faça uma busca digitando <strong>Ctrl+F</strong> (Windows, Linux e
     </div>
 
 
-    <div id="diretoria-de-acoes-afirmativas" data-email_principal="acoesafirmativas@ufjf.br">
+    <div id="setores" title="diretoria-de-acoes-afirmativas">
       <tr>
         <td rowspan="4" style="vertical-align: middle;font-weight: bold">DIRETORIA DE AÇÕES AFIRMATIVAS - DIAAF</td>
         <td style="vertical-align: middle">Secretaria</td>
@@ -1035,7 +1016,7 @@ Se preferir, faça uma busca digitando <strong>Ctrl+F</strong> (Windows, Linux e
     </div>
 
 
-    <div id="diretoria-de-imagem" data-email_principal="imagem@ufjf.br">
+    <div id="setores" title="diretoria-de-imagem">
       <tr>
         <td rowspan="6" style="vertical-align: middle;font-weight: bold">DIRETORIA DE IMAGEM INSTITUCIONAL</td>
         <td style="vertical-align: middle">Secretaria</td>
@@ -1077,7 +1058,7 @@ Se preferir, faça uma busca digitando <strong>Ctrl+F</strong> (Windows, Linux e
     </div>
 
 
-    <div id="diretoria-de-relacoes-internacionais" data-email_principal="internationaloffice@ufjf.br">
+    <div id="setores" title="diretoria-de-relacoes-internacionais">
       <tr>
         <td rowspan="9" style="vertical-align: middle;font-weight: bold">DIRETORIA DE RELAÇÕES INTERNACIONAIS - DRI</td>
         <td style="vertical-align: middle">Secretaria Executiva</td>
@@ -1145,7 +1126,7 @@ Se preferir, faça uma busca digitando <strong>Ctrl+F</strong> (Windows, Linux e
     </div>
 
 
-    <div id="dce" data-email_principal="falecomodce@gmail.com">
+    <div id="setores" title="dce">
       <tr>
         <td colspan="2" style="vertical-align: middle;font-weight: bold">DIRETÓRIO CENTRAL DOS ESTUDANTES - DCE</td>
         <td></td>
@@ -1156,7 +1137,7 @@ Se preferir, faça uma busca digitando <strong>Ctrl+F</strong> (Windows, Linux e
     </div>
 
 
-    <div id="economia" data-email_principal="secretaria.eco@ufjf.br">
+    <div id="setores" title="economia">
       <tr>
         <td rowspan="4" style="vertical-align: middle;font-weight: bold">ECONOMIA</td>
         <td style="vertical-align: middle">Secretaria da Graduação</td>
@@ -1187,7 +1168,7 @@ Se preferir, faça uma busca digitando <strong>Ctrl+F</strong> (Windows, Linux e
     </div>
 
 
-    <div id="editora-ufjf" data-email_principal="editora@ufjf.br">
+    <div id="setores" title="editora">
       <tr>
         <td colspan="2" style="vertical-align: middle;font-weight: bold">EDITORA UFJF</td>
         <td style="vertical-align: middle;text-align: center"><a href="https://www.ufjf.br/editora" rel="noopener" target="_blank">www.ufjf.br/editora</a></td>
@@ -1198,7 +1179,7 @@ Se preferir, faça uma busca digitando <strong>Ctrl+F</strong> (Windows, Linux e
     </div>
 
 
-    <div id="educacao" data-email_principal="secretaria.faced@ufjf.br">
+    <div id="setores" title="educacao">
       <tr>
         <td rowspan="3" style="vertical-align: middle;font-weight: bold">EDUCAÇÃO</td>
         <td style="vertical-align: middle">Secretaria</td>
@@ -1221,7 +1202,7 @@ Se preferir, faça uma busca digitando <strong>Ctrl+F</strong> (Windows, Linux e
     </div>
 
 
-    <div id="educacao-fisica" data-email_principal="secretariaacademica.faefid@ufjf.br">
+    <div id="setores" title="educacao-fisica">
       <tr>
         <td rowspan="2" style="vertical-align: middle;font-weight: bold">EDUCAÇÃO FÍSICA</td>
         <td style="vertical-align: middle">Secretaria</td>
@@ -1239,7 +1220,7 @@ Se preferir, faça uma busca digitando <strong>Ctrl+F</strong> (Windows, Linux e
     </div>
 
 
-    <div id="empresas-terceirizadas" data-email_principal="">
+    <div id="setores" title="empresas-terceirizadas">
       <tr>
         <td rowspan="2" style="vertical-align: middle;font-weight: bold">EMPRESAS TERCEIRIZADAS (prestadoras de serviços à UFJF)</td>
         <td style="vertical-align: middle">Planejar Terceirização e Serviços</td>
@@ -1248,7 +1229,7 @@ Se preferir, faça uma busca digitando <strong>Ctrl+F</strong> (Windows, Linux e
         <td style="vertical-align: middle;text-align: center"></td>
         <td></td>
       </tr>
-      <tr id ="village" data-email_principal="supervisao.ufjf@villageservicos.com.br">
+      <tr>
         <td style="vertical-align: middle">Village Administração e Serviços</td>
         <td style="vertical-align: middle;text-align: center"></td>
         <td style="vertical-align: middle;text-align: center">(32) 3025-4436</td>
@@ -1258,7 +1239,7 @@ Se preferir, faça uma busca digitando <strong>Ctrl+F</strong> (Windows, Linux e
     </div>
 
 
-    <div id="enfermagem" data-email_principal="secretaria.enfermagem@ufjf.br">
+    <div id="setores" title="enfermagem">
       <tr>
         <td rowspan="7" style="vertical-align: middle;font-weight: bold">ENFERMAGEM - Faculdade de Enfermagem (Facenf/UFJF)</td>
         <td style="vertical-align: middle">Secretaria</td>
@@ -1305,7 +1286,7 @@ Se preferir, faça uma busca digitando <strong>Ctrl+F</strong> (Windows, Linux e
 
 
 
-    <div id="engenharia" data-email_principal="secretaria@engenharia.ufjf.br">
+    <div id="setores" title="engenharia">
       <tr>
         <td rowspan="32" style="vertical-align: middle;font-weight: bold">ENGENHARIA</td>
         <td style="vertical-align: middle">Secretaria</td>
@@ -1536,7 +1517,10 @@ Se preferir, faça uma busca digitando <strong>Ctrl+F</strong> (Windows, Linux e
 
 
 
-    <div id="engenharia-ambiental-sanitaria" data-email_principal="coord.esa@engenharia.ufjf.br">
+
+
+
+    <div id="setores" title="engenharia-ambiental-sanitaria">
       <tr>
         <td style="vertical-align: middle;font-weight: bold">ENGENHARIA AMBIENTAL E SANITÁRIA</td>
         <td style="vertical-align: middle">Coordenação do Curso</td>
@@ -1548,7 +1532,7 @@ Se preferir, faça uma busca digitando <strong>Ctrl+F</strong> (Windows, Linux e
     </div>
 
 
-    <div id="engenharia-civil" data-email_principal="oordenacao.civil@engenharia.ufjf.br">
+    <div id="setores" title="engenharia-civil">
       <tr>
         <td rowspan="2" style="vertical-align: middle;font-weight: bold">ENGENHARIA CIVIL</td>
         <td style="vertical-align: middle">Coordenação do Curso/Secretaria</td>
@@ -1566,7 +1550,7 @@ Se preferir, faça uma busca digitando <strong>Ctrl+F</strong> (Windows, Linux e
     </div>
 
 
-    <div id="engenharia-computacional" data-email_principal="">
+    <div id="setores" title="engenharia-computacional">
       <tr>
         <td colspan="2" style="vertical-align: middle;font-weight: bold">ENGENHARIA COMPUTACIONAL</td>
         <td style="vertical-align: middle;text-align: center"><a href="https://www.ufjf.br/engcomputacional" rel="noopener" target="_blank">www.ufjf.br/engcomputacional</a></td>
@@ -1577,7 +1561,7 @@ Se preferir, faça uma busca digitando <strong>Ctrl+F</strong> (Windows, Linux e
     </div>
 
 
-    <div id="engenharia-de-producao" data-email_principal="coordenacao.producao@engenharia.ufjf.br">
+    <div id="setores" title="engenharia-de-producao">
       <tr>
         <td colspan="2" style="vertical-align: middle;font-weight: bold">ENGENHARIA DE PRODUÇÃO</td>
         <td style="vertical-align: middle;text-align: center"><a href="https://www.ufjf.br/engenhariadeproducao" rel="noopener" target="_blank">www.ufjf.br/engenhariadeproducao</a></td>
@@ -1588,7 +1572,7 @@ Se preferir, faça uma busca digitando <strong>Ctrl+F</strong> (Windows, Linux e
     </div>
 
 
-    <div id="engenharia-eletrica" data-email_principal="coord.eletrica25@engenharia.ufjf.br">
+    <div id="setores" title="engenharia-eletrica">
       <tr>
         <td rowspan="4" style="vertical-align: middle;font-weight: bold">ENGENHARIA ELÉTRICA</td>
         <td style="vertical-align: middle">Secretaria</td>
@@ -1597,7 +1581,7 @@ Se preferir, faça uma busca digitando <strong>Ctrl+F</strong> (Windows, Linux e
         <td style="vertical-align: middle;text-align: center"><a href="mailto:coord.eletrica25@engenharia.ufjf.br">coord.eletrica25@engenharia.ufjf.br<br></a><a href="mailto:coord.eletricanoturno@engenharia.ufjf.br">coord.eletricanoturno@engenharia.ufjf.br<br></a><a href="mailto:coord.automacao@engenharia.ufjf.br">coord.energia@engenharia.ufjf.br<br></a><a href="mailto:coord.potencia@engenharia.ufjf.br">coord.potencia@engenharia.ufjf.br<br></a></a><a href="mailto:coord.eletronica@engenharia.ufjf.br">coordenacao.telecom@engenharia.ufjf.br<br></a><a href="mailto:coord.eletronica@engenharia.ufjf.br">coord.eletronica@engenharia.ufjf.br</a></td>
         <td></td>
       </tr>
-      <tr id = mestrado-engenharia-eletrica data-email_principal="ppee@ufjf.br">
+      <tr>
         <td style="vertical-align: middle">Mestrado e Doutorado em Engenharia Elétrica</td>
         <td style="vertical-align: middle;text-align: center"></td>
         <td style="vertical-align: middle;text-align: center">(32) 2102-3442</td>
@@ -1621,7 +1605,7 @@ Se preferir, faça uma busca digitando <strong>Ctrl+F</strong> (Windows, Linux e
     </div>
 
 
-    <div id="engenharia-mecanica" data-email_principal="coordenacao.mecanica@engenharia.ufjf.br">
+    <div id="setores" title="engenharia-mecanica">
       <tr>
         <td colspan="2" style="vertical-align: middle;font-weight: bold">ENGENHARIA MECÂNICA</td>
         <td style="vertical-align: middle;text-align: center"><a href="https://www.ufjf.br/mecanica" rel="noopener" target="_blank">www.ufjf.br/mecanica</a></td>
@@ -1632,7 +1616,7 @@ Se preferir, faça uma busca digitando <strong>Ctrl+F</strong> (Windows, Linux e
     </div>
 
 
-    <div id="estatistica" data-email_principal="secretaria.estatistica@ice.ufjf.br">
+    <div id="setores" title="estatistica">
       <tr>
         <td colspan="2" style="vertical-align: middle;font-weight: bold">ESTATÍSTICA</td>
         <td style="vertical-align: middle;text-align: center"><a href="https://www.ufjf.br/estatistica/" rel="noopener" target="_blank">www.ufjf.br/estatistica</a></td>
@@ -1643,7 +1627,7 @@ Se preferir, faça uma busca digitando <strong>Ctrl+F</strong> (Windows, Linux e
     </div>
 
 
-    <div id="fadepe" data-email_principal="faleconosco@fadepe.org.br"></div>
+    <div id="setores" title="fadepe">
       <tr>
         <td colspan="2" style="vertical-align: middle;font-weight: bold">FADEPE - Fundação de Apoio e Desenvolvimento ao Ensino, Pesquisa e Extensão</td>
         <td style="vertical-align: middle;text-align: center"><a href="https://www.fadepe.org.br/" rel="noopener" target="_blank">www.fadepe.org.br</a></td>
@@ -1654,7 +1638,7 @@ Se preferir, faça uma busca digitando <strong>Ctrl+F</strong> (Windows, Linux e
     </div>
 
 
-    <div id="farmacia" data-email_principal="coord.farmacia@ufjf.br">
+    <div id="setores" title="farmacia">
       <tr>
         <td rowspan="3" style="vertical-align: middle;font-weight: bold">FARMÁCIA</td>
         <td style="vertical-align: middle">Secretaria</td>
@@ -1676,7 +1660,7 @@ Se preferir, faça uma busca digitando <strong>Ctrl+F</strong> (Windows, Linux e
     </div>
 
 
-    <div id="farmacia-universitaria" data-email_principal="farmacia.universitaria@farmacia.ufjf.br">
+    <div id="setores" title="farmacia-universitaria">
       <tr>
         <td colspan="2" style="vertical-align: middle;font-weight: bold">FARMÁCIA UNIVERSITÁRIA</td>
         <td style="vertical-align: middle;text-align: center"><a href="https://www.ufjf.br/farmaciauniversitaria" rel="noopener" target="_blank">www.ufjf.br/farmaciauniversitaria</a></td>
@@ -1687,7 +1671,7 @@ Se preferir, faça uma busca digitando <strong>Ctrl+F</strong> (Windows, Linux e
     </div>
 
 
-    <div id="filosofia" data-email_principal="coord.filosofia@ufjf.br">
+    <div id="setores" title="filosofia">
       <tr>
         <td rowspan="2" style="vertical-align: middle;font-weight: bold">FILOSOFIA
         </td>
@@ -1707,7 +1691,7 @@ Se preferir, faça uma busca digitando <strong>Ctrl+F</strong> (Windows, Linux e
     </div>
 
 
-    <div id="fisica" data-email_principal="secretaria.fisica@ufjf.br">
+    <div id="setores" title="fisica">
       <tr>
         <td rowspan="7" style="vertical-align: middle;font-weight: bold">FÍSICA</td>
         <td style="vertical-align: middle">Secretaria</td>
@@ -1761,7 +1745,7 @@ Se preferir, faça uma busca digitando <strong>Ctrl+F</strong> (Windows, Linux e
     </div>
 
 
-    <div id="fisioterapia" data-email_principal="secretaria.facfisio@ufjf.br">
+    <div id="setores" title="fisioterapia">
       <tr>
         <td rowspan="3" style="vertical-align: middle;font-weight: bold">FISIOTERAPIA</td>
         <td style="vertical-align: middle">Secretaria</td>
@@ -1786,7 +1770,7 @@ Se preferir, faça uma busca digitando <strong>Ctrl+F</strong> (Windows, Linux e
     </div>
 
 
-    <div id="forum-da-cultura" data-email_principal="forumdacultura@ufjf.br">
+    <div id="setores" title="forum-da-cultura">
       <tr>
         <td colspan="2" style="vertical-align: middle;font-weight: bold">FORUM DA CULTURA</td>
         <td style="vertical-align: middle;text-align: center"><a href="https://www2.ufjf.br/forumdacultura/" rel="noopener" target="_blank">www2.ufjf.br/forumdacultura</a></td>
@@ -1797,7 +1781,7 @@ Se preferir, faça uma busca digitando <strong>Ctrl+F</strong> (Windows, Linux e
   </div>
 
   
-  <div id="cursinho-garra" data-email_principal="comunica.garra@gmail.com">
+  <div id="setores" title="garra">
     <tr>
       <td colspan="2" style="vertical-align: middle;font-weight: bold">GARRA - Cursinho Popular</td>
       <td style="vertical-align: middle;text-align: center"><a href="https://sites.google.com/view/garra-cursinho-popular?pli=1" rel="noopener" target="_blank">sites.google.com/view/garra-cursinho-popular</a></td>
@@ -1808,7 +1792,7 @@ Se preferir, faça uma busca digitando <strong>Ctrl+F</strong> (Windows, Linux e
   </div>
 
 
-    <div id="geografia" data-email_principal="coord.geografia@ufjf.br">
+    <div id="setores" title="geografia">
       <tr>
         <td style="vertical-align: middle;font-weight: bold">GEOGRAFIA</td>
         <td style="vertical-align: middle">Coordenação do Curso</td>
@@ -1820,7 +1804,7 @@ Se preferir, faça uma busca digitando <strong>Ctrl+F</strong> (Windows, Linux e
     </div> 
 
 
-    <div id="governador-valadares" data-email_principal="caad.gv@ufjf.br">
+    <div id="setores" title="governador-valadares">
       <tr>
         <td rowspan="81" style="vertical-align: middle;font-weight: bold">GOVERNADOR<br>VALADARES - GV</td>
       </tr>
@@ -2287,7 +2271,7 @@ Se preferir, faça uma busca digitando <strong>Ctrl+F</strong> (Windows, Linux e
     </div>
 
 
-    <div id="historia" data-email_principal="coordenacao.historia@ufjf.br">
+    <div id="setores" title="historia">
       <tr>
         <td style="vertical-align: middle;font-weight: bold">HISTÓRIA</td>
         <td style="vertical-align: middle">Coordenação do Curso</td>
@@ -2299,7 +2283,7 @@ Se preferir, faça uma busca digitando <strong>Ctrl+F</strong> (Windows, Linux e
     </div>
 
 
-    <div id="hospital-universitario" data-email_principal="ucs.hu-ufjf@ebserh.gov.br">
+    <div id="setores" title="hospital-universitario">
       <tr>
         <td rowspan="31" style="vertical-align: middle;font-weight: bold">HOSPITAL UNIVERSITÁRIO - HU</td>
         <td style="vertical-align: middle">Unidade de Comunicação Social</td>
@@ -2492,7 +2476,7 @@ Se preferir, faça uma busca digitando <strong>Ctrl+F</strong> (Windows, Linux e
     </div>
 
 
-    <div id="if-sudeste" data-email_principal="dde.jf@ifsudestemg.edu.br">
+    <div id="setores" title="if-sudeste">
       <tr>
         <td rowspan="4" style="vertical-align: middle;font-weight: bold">IF SUDESTE MG</td>
         <td style="vertical-align: middle">Diretoria de Ensino</td>
@@ -2525,13 +2509,13 @@ Se preferir, faça uma busca digitando <strong>Ctrl+F</strong> (Windows, Linux e
     </div>
 
 
-    <div id="icb" data-email_principal="secretaria.icb@ufjf.br">
+    <div id="setores" title="icb">
       <tr>
         <td rowspan="29" style="vertical-align: middle;font-weight: bold">INSTITUTO DE CIÊNCIAS BIOLÓGICAS – ICB</td>
         <td style="vertical-align: middle">Secretaria</td>
         <td rowspan="29" style="vertical-align: middle;text-align: center"><a href="https://www.ufjf.br/icb/" rel="noopener" target="_blank">www.ufjf.br/icb</a></td>
         <td style="vertical-align: middle;text-align: center">(32) 2102-3201<br>(32) 2102-3202</td>
-        <td style="vertical-align: middle;text-align: center"><a href="mailto:secretaria.icb@ufjf.br">secretaria.icb@ufjf.br</a></td>
+        <td></td>
         <td></td>
       </tr>
       <tr>
@@ -2549,61 +2533,67 @@ Se preferir, faça uma busca digitando <strong>Ctrl+F</strong> (Windows, Linux e
       <tr>
         <td style="vertical-align: middle">Coordenação do Curso de Ciências Biológicas</td>
         <td style="vertical-align: middle;text-align: center">(32) 2102-3204</td>
-        <td style="vertical-align: middle;text-align: center"><a href="mailto:coord.biologia@ufjf.br">coord.biologia@ufjf.br</a></td>
+        <td></td>
         <td></td>
       </tr>
       <tr>
         <td style="vertical-align: middle">Departamento de Biologia</td>
         <td style="vertical-align: middle;text-align: center">(32) 2102-3206<br>(32) 2102-6302</td>
-        <td style="vertical-align: middle;text-align: center"><a href="mailto:depto.biologia@ufjf.br">depto.biologia@ufjf.br</a></td>
+        <td></td>
         <td></td>
       </tr>
       <tr>
         <td style="vertical-align: middle">Departamento de Bioquímica</td>
         <td style="vertical-align: middle;text-align: center">(32) 2102-3208</td>
-        <td style="vertical-align: middle;text-align: center"><a href="mailto:dep.bioquimica@ufjf.br">dep.bioquimica@ufjf.br</a></td>
+        <td></td>
         <td></td>
       </tr>
       <tr>
         <td style="vertical-align: middle">Departamento de Botânica</td>
         <td style="vertical-align: middle;text-align: center">(32) 2102-3207</td>
-        <td style="vertical-align: middle;text-align: center"><a href="mailto:departamento.botanica@ufjf.br">departamento.botanica@ufjf.br</a></td>
+        <td></td>
         <td></td>
       </tr>
       <tr>
         <td style="vertical-align: middle">Departamento de Farmacologia</td>
         <td style="vertical-align: middle;text-align: center">2102-3210</td>
-        <td style="vertical-align: middle;text-align: center"><a href="mailto:depto.far@ufjf.br">depto.far@ufjf.br</a></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td style="vertical-align: middle">Departamento de Botânica</td>
+        <td style="vertical-align: middle;text-align: center">(32) 2102-3207</td>
+        <td></td>
         <td></td>
       </tr>
       <tr>
         <td style="vertical-align: middle">Departamento de Fisiologia</td>
         <td style="vertical-align: middle;text-align: center">(32) 2102-3211</td>
-        <td style="vertical-align: middle;text-align: center"><a href="mailto:depto.fsi@ufjf.br">depto.fsi@ufjf.br</a></td>
+        <td></td>
         <td></td>
       </tr>
       <tr>
         <td style="vertical-align: middle">Departamento de Anatomia</td>
         <td style="vertical-align: middle;text-align: center">(32) 2102-3205</td>
-        <td style="vertical-align: middle;text-align: center"><a href="mailto:depto.anatomia@ufjf.br">depto.anatomia@ufjf.br</a></td>
+        <td></td>
         <td></td>
       </tr>
       <tr>
         <td style="vertical-align: middle">Departamento de Morfologia/Histologia</td>
         <td style="vertical-align: middle;text-align: center">(32) 2102-3212</td>
-        <td style="vertical-align: middle;text-align: center"><a href="mailto:depto.morfologia@ufjf.br">depto.morfologia@ufjf.br</a></td>
+        <td></td>
         <td></td>
       </tr>
       <tr>
         <td style="vertical-align: middle">Departamento de Nutrição e Coordenação do Curso de Nutrição</td>
         <td style="vertical-align: middle;text-align: center">(32) 2102-3234</td>
-        <td style="vertical-align: middle;text-align: center"><a href="mailto:depto.nutricao@ufjf.br">depto.nutricao@ufjf.br</a></td>
+        <td></td>
         <td></td>
       </tr>
       <tr>
         <td style="vertical-align: middle">Departamento de Zoologia</td>
         <td style="vertical-align: middle;text-align: center">(32) 2102-3218</td>
-        <td style="vertical-align: middle;text-align: center"><a href="mailto:zoologia@icb.ufjf.br">zoologia@icb.ufjf.br</a></td>
+        <td></td>
         <td></td>
       </tr>
       <tr>
@@ -2687,13 +2677,7 @@ Se preferir, faça uma busca digitando <strong>Ctrl+F</strong> (Windows, Linux e
       <tr>
         <td style="vertical-align: middle">Pós Graduação em Imunologia, Genética e Biotecnologia</td>
         <td style="vertical-align: middle;text-align: center">(32) 2102-3220</td>
-        <td style="vertical-align: middle;text-align: center"><a href="mailto:ppg.cbio@ufjf.br">ppg.cbio@ufjf.br</a></td>
         <td></td>
-      </tr>
-      <tr>
-        <td style="vertical-align: middle">Pós-Graduação em Biodiversidade e Conservação da Natureza</td>
-        <td style="vertical-align: middle;text-align: center">(32) 2102-3223<br>(32) 2102-3222<br>(32) 2102-3227</td>
-        <td style="vertical-align: middle;text-align: center"><a href="mailto:ppg.biodiversidade@ufjf.br">ppg.biodiversidade@ufjf.br</a></td>
         <td></td>
       </tr>
       <tr>
@@ -2706,7 +2690,7 @@ Se preferir, faça uma busca digitando <strong>Ctrl+F</strong> (Windows, Linux e
 
 
 
-    <div id="ice" data-email_principal="secretaria.ice@ice.ufjf.br">
+    <div id="setores" title="ice">
       <tr>
         <td rowspan="8" style="vertical-align: middle;font-weight: bold">INSTITUTO DE CIÊNCIAS EXATAS – ICE</td>
         <td style="vertical-align: middle">Secretaria do Instituto de Ciências Exatas - ICE</td>
@@ -2760,19 +2744,19 @@ Se preferir, faça uma busca digitando <strong>Ctrl+F</strong> (Windows, Linux e
     </div>
 
 
-    <div id="ich" data-email_principal="secretaria.ich@ufjf.br">
+    <div id="setores" title="ich">
       <tr>
         <td style="vertical-align: middle;font-weight: bold">INSTITUTO DE CIÊNCIAS HUMANAS – ICH</td>
         <td style="vertical-align: middle">Secretaria</td>
         <td style="vertical-align: middle;text-align: center"><a href="https://www2.ufjf.br/ich/" rel="noopener" target="_blank">www2.ufjf.br/ich</a></td>
         <td style="vertical-align: middle;text-align: center">(32) 2102-3101<br>(32) 2102-3102</td>
-        <td style="vertical-align: middle;text-align: center"><a href="mailto:secretaria.ich@ufjf.br">secretaria.ich@ufjf.br</a><br><a href="mailto:recepcao.ich@ufjf.br">recepcao.ich@ufjf.br</a><br><a href="mailto:direcao.ich@ufjf.br">direcao.ich@ufjf.br</a></td>
+        <td></td>
         <td></td>
       </tr>
     </div>
 
 
-    <div id="jardim-botanico" data-email_principal="jardimbotanico@ufjf.br">
+    <div id="setores" title="jardim-botanico">
       <tr>
         <td colspan="2" style="vertical-align: middle;font-weight: bold">JARDIM BOTÂNICO</td>
         <td style="vertical-align: middle;text-align: center"><a href="https://www.ufjf.br/jardimbotanico/" rel="noopener" target="_blank">www.ufjf.br/jardimbotanico</a></td>
@@ -2782,7 +2766,7 @@ Se preferir, faça uma busca digitando <strong>Ctrl+F</strong> (Windows, Linux e
       </tr>
     </div>
 
-    <div id="letras" data-email_principal="secretaria.letras@ufjf.br">
+    <div id="setores" title="letras">
       <tr>
         <td rowspan="10" style="vertical-align: middle;font-weight: bold">LETRAS</td>
         <td style="vertical-align: middle">Secretaria</td>
@@ -2829,21 +2813,21 @@ Se preferir, faça uma busca digitando <strong>Ctrl+F</strong> (Windows, Linux e
         <td></td>
         <td></td>
       </tr>
-      <tr id="ppg-letras" data-email_principal="ppg.letras@ufjf.br">
+      <tr>
         <td style="vertical-align: middle">Programa de Pós-Graduação em Letras: Estudos Literários</td>
         <td style="vertical-align: middle;text-align: center"><a href="https://www2.ufjf.br/ppgletras/" rel="noopener" target="_blank">www2.ufjf.br/ppgletras</a></td>
         <td style="vertical-align: middle;text-align: center">(32) 2102-3118</td>
         <td style="vertical-align: middle;text-align: center"><a href="mailto:ppg.letras@ufjf.br">ppg.letras@ufjf.br</a></td>
         <td style="vertical-align: middle;text-align: center">   <a href="https://www.instagram.com/estudosliterariosufjf/" rel="noopener" target="_blank"><img src="https://www2.ufjf.br/cat/wp-content/uploads/sites/19/2021/08/instagram-logo-3-300x300.png" alt="" width="20" height="20" class="alignnone size-medium wp-image-7342" />&lt;/a</td>
       </tr>
-      <tr  id="ppg-linguistica" data-email_principal="ppg.linguistica@ufjf.br">
+      <tr>
         <td style="vertical-align: middle">Programa de Pós-Graduação em Linguísticas</td>
         <td style="vertical-align: middle;text-align: center"><a href="https://www2.ufjf.br/ppglinguistica/" rel="noopener" target="_blank">www2.ufjf.br/ppglinguistica</a></td>
         <td style="vertical-align: middle;text-align: center">(32) 2102-3134</td>
         <td style="vertical-align: middle;text-align: center"><a href="mailto:ppg.linguistica@ufjf.br">ppg.linguistica@ufjf.br</a></td>
         <td></td>
       </tr>
-      <tr id="profletras" data-email_principal="mestrado.profletras@ufjf.br">
+      <tr>
         <td style="vertical-align: middle">Mestrado Profissional em Letras (ProfLetras)</td>
         <td style="vertical-align: middle;text-align: center"><a href="https://www.ufjf.br/profletras/" rel="noopener" target="_blank">www.ufjf.br/profletras</a></td>
         <td style="vertical-align: middle;text-align: center">(32) 2102-3112</td>
@@ -2853,7 +2837,7 @@ Se preferir, faça uma busca digitando <strong>Ctrl+F</strong> (Windows, Linux e
     </div>
 
 
-    <div id="mais-consultoria" data-email_principal="maisconsultoria@maisconsultoria.com.br">
+    <div id="setores" title="mais-consultoria">
       <tr>
         <td colspan="2" style="vertical-align: middle;font-weight: bold">MAIS CONSULTORIA JR</td>
         <td style="vertical-align: middle;text-align: center"><a href="https://www.maisconsultoria.com.br/" rel="noopener" target="_blank">www.maisconsultoria.com.br</a></td>
@@ -2864,13 +2848,13 @@ Se preferir, faça uma busca digitando <strong>Ctrl+F</strong> (Windows, Linux e
     </div>
 
 
-    <div id="mamm" data-email_principal="administracao.mam@ufjf.br">
+    <div id="setores" title="mamm">
       <tr>
         <td rowspan="7" style="vertical-align: middle;font-weight: bold">MUSEU DE ARTE MODERNA MURILO MENDES - MAMM</td>
         <td style="vertical-align: middle">Recepção</td>
         <td rowspan="7" style="vertical-align: middle;text-align: center"><a href="https://www.museudeartemurilomendes.com.br/" rel="noopener" target="_blank">www.museudeartemurilomendes.com.br</a></td>
         <td style="vertical-align: middle;text-align: center">(32) 2102-3582</td>
-        <td style="vertical-align: middle;text-align: center"><a href="mailto:administracao.mam@ufjf.br">administracao.mam@ufjf.br</a></td>
+        <td style="vertical-align: middle;text-align: center"><a href="mailto:EMAIL">EMAIL_DO_SETOR</a></td>
         <td rowspan="7" style="vertical-align: middle;text-align: center">   <a href="https://www.instagram.com/mamm.ufjf/" rel="noopener" target="_blank"><img src="https://www2.ufjf.br/cat/wp-content/uploads/sites/19/2021/08/instagram-logo-3-300x300.png" alt="" width="20" height="20" class="alignnone size-medium wp-image-7342" /></a><br>     <a href="https://www.facebook.com/mamm.ufjf" rel="noopener" target="_blank"><img src="https://www2.ufjf.br/cat/wp-content/uploads/sites/19/2021/08/facebook_logo.png" alt="" width="20" height="20" class="alignnone size-full wp-image-7358" /></a><br>     <a href="https://www.bit.ly/YouTubeMAMM" rel="noopener" target="_blank"><img src="https://www2.ufjf.br/cat/wp-content/uploads/sites/19/2021/09/icone_youtube.jpg" alt="" width="20" height="20" class="alignnone size-full wp-image-7358" /></a><br>     <a href="https://www.twitter.com/mamm_ufjf" rel="noopener" target="_blank"><img src="https://www2.ufjf.br/cat/wp-content/uploads/sites/19/2021/09/icone_twitter.png" alt="" width="20" height="20" class="alignnone size-full wp-image-7358" /></a><br>   <a href="https://www.instagram.com/mamm.ufjf/" rel="noopener" target="_blank"><img src="https://www2.ufjf.br/cat/wp-content/uploads/sites/19/2021/08/instagram-logo-3-300x300.png" alt="" width="20" height="20" class="alignnone size-medium wp-image-7342" /></a><br>     <a href="https://www.facebook.com/mamm.ufjf" rel="noopener" target="_blank"><img src="https://www2.ufjf.br/cat/wp-content/uploads/sites/19/2021/08/facebook_logo.png" alt="" width="20" height="20" class="alignnone size-full wp-image-7358" /></a></td>
       </tr>
       <tr>
@@ -2906,7 +2890,7 @@ Se preferir, faça uma busca digitando <strong>Ctrl+F</strong> (Windows, Linux e
     </div>
 
 
-    <div id="matematica" data-email_principal="depto.mat@ufjf.br">
+    <div id="setores" title="matematica">
       <tr>
         <td rowspan="8" style="vertical-align: middle;font-weight: bold">MATEMÁTICA</td>
         <td style="vertical-align: middle">Secretaria</td>
@@ -2965,7 +2949,7 @@ Se preferir, faça uma busca digitando <strong>Ctrl+F</strong> (Windows, Linux e
     </div>
 
 
-    <div id="medicina" data-email_principal="secretaria.medicina@ufjf.br">
+    <div id="setores" title="medicina">
       <tr>
         <td rowspan="3" style="vertical-align: middle;font-weight: bold">MEDICINA</td>
         <td style="vertical-align: middle">Secretaria</td>
@@ -2989,7 +2973,7 @@ Se preferir, faça uma busca digitando <strong>Ctrl+F</strong> (Windows, Linux e
     </div>
 
 
-    <div id="medicina_veterinaria" data-email_principal="depto.veterinaria@ufjf.br">
+    <div id="setores" title="medicina_veterinaria">
       <tr>
         <td rowspan="4" style="vertical-align: middle;font-weight: bold">MEDICINA VETERINÁRIA</td>
         <td style="vertical-align: middle">Secretaria</td>
@@ -3020,7 +3004,7 @@ Se preferir, faça uma busca digitando <strong>Ctrl+F</strong> (Windows, Linux e
       </tr>
 
 
-    <div id="memorial_itamar_franco" data-email_principal="secretaria.memorial@ufjf.br">
+    <div id="setores" title="memorial_itamar_franco">
       <tr>
         <td rowspan="4" style="vertical-align: middle;font-weight: bold">MEMORIAL DA REPÚBLICA ITAMAR FRANCO</td>
         <td style="vertical-align: middle">Secretaria</td>
@@ -3050,7 +3034,7 @@ Se preferir, faça uma busca digitando <strong>Ctrl+F</strong> (Windows, Linux e
     </div>
 
 
-    <div id="museu_arqueologia" data-email_principal="maea.ufjf@gmail.com">
+    <div id="setores" title="museu_arqueologia">
       <tr>
       <td colspan="2" style="vertical-align: middle;font-weight: bold">MUSEU DE ARQUEOLOGIA E ETNOLOGIA AMERICANA</td>
       <td style="vertical-align: middle;text-align: center"><a href="https://www2.ufjf.br/maea/" rel="noopener" target="_blank">www2.ufjf.br/maea</a></td>
@@ -3061,7 +3045,7 @@ Se preferir, faça uma busca digitando <strong>Ctrl+F</strong> (Windows, Linux e
     </div>
 
 
-    <div id="nai" data-email_principal="nucleo.nai@ufjf.br">
+    <div id="setores" title="nai">
       <tr>
         <td rowspan="2" style="vertical-align: middle;font-weight: bold">NAI - Núcleo de Apoio À Inclusão</td>
         <td style="vertical-align: middle">Secretaria</td>
@@ -3078,7 +3062,7 @@ Se preferir, faça uma busca digitando <strong>Ctrl+F</strong> (Windows, Linux e
     </div>
 
 
-    <div id="ngime" data-email_principal="secretaria@ngime.ufjf.br">
+    <div id="setores" title="ngime">
       <tr>
         <td colspan="2" style="vertical-align: middle;font-weight: bold">NGIME - Núcleo do Grupo de Pesquisa em Inclusão, Movimento e Ensino a Distância</td>
         <td style="vertical-align: middle;text-align: center"><a href="https://www.ngime.ufjf.br/" rel="noopener" target="_blank">www.ngime.ufjf.br</a></td>
@@ -3089,19 +3073,19 @@ Se preferir, faça uma busca digitando <strong>Ctrl+F</strong> (Windows, Linux e
     </div>
 
 
-    <div id="nutricao" data-email_principal="depto.nutricao@ufjf.br">
+    <div id="setores" title="nutricao">
       <tr>
         <td style="vertical-align: middle;font-weight: bold">NUTRIÇÃO</td>
         <td style="vertical-align: middle">Coordenação do Curso de Nutrição</td>
         <td></td>
         <td style="vertical-align: middle;text-align: center">(32) 2102-3229</td>
-        <td style="vertical-align: middle;text-align: center"><a href="mailto:depto.nutricao@ufjf.br">depto.nutricao@ufjf.br</a></td>
+        <td></td>
         <td></td>
       </tr>
     </div>
 
 
-    <div id="odontologia" data-email_principal="coord.odontologia@ufjf.br">
+    <div id="setores" title="odontologia">
       <tr>
         <td rowspan="14" style="vertical-align: middle;font-weight: bold">ODONTOLOGIA</td>
         <td style="vertical-align: middle">Secretaria</td>
@@ -3191,7 +3175,7 @@ Se preferir, faça uma busca digitando <strong>Ctrl+F</strong> (Windows, Linux e
     </div>
 
 
-    <div id="ouvidoria" data-email_principal="ouvidoria@ufjf.br">
+    <div id="setores" title="ouvidoria">
       <tr>
         <td rowspan="2" style="vertical-align: middle;font-weight: bold">OUVIDORIA</td>
         <td></td>
@@ -3211,13 +3195,13 @@ Se preferir, faça uma busca digitando <strong>Ctrl+F</strong> (Windows, Linux e
     </div>
 
 
-    <div id="pedagogia" data-email_principal="coord.pedagogia@ufjf.br">
+    <div id="setores" title="pedagogia">
       <tr>
         <td rowspan="2" style="vertical-align: middle;font-weight: bold">PEDAGOGIA</td>
         <td style="vertical-align: middle">Secretaria</td>
         <td rowspan="2" style="vertical-align: middle;text-align: center"><a href="https://www.ufjf.br/pedagogia//" rel="noopener" target="_blank">www.ufjf.br/pedagogia</a></td>
         <td rowspan="2" style="vertical-align: middle;text-align: center">(32) 2102-3650</td>
-        <td style="vertical-align: middle;text-align: center"><a href="mailto:coord.pedagogia@ufjf.br">coord.pedagogia@ufjf.br</a></td>
+        <td></td>
         <td rowspan="2" style="text-align: center;text-align: center">   <a href="https://www.instagram.com/pedagogia.ead.ufjf/" rel="noopener" target="_blank"><img src="https://www2.ufjf.br/cat/wp-content/uploads/sites/19/2021/08/instagram-logo-3-300x300.png" alt="" width="20" height="20" class="alignnone size-medium wp-image-7342" /></a><br>     <a href="https://www.youtube.com/watch?v=b39o_z9jgQ8" rel="noopener" target="_blank"><img src="https://www2.ufjf.br/cat/wp-content/uploads/sites/19/2021/09/icone_youtube.jpg" alt="" width="20" height="20" class="alignnone size-full wp-image-7358" /></a></td>
       </tr>
       <tr>
@@ -3227,7 +3211,7 @@ Se preferir, faça uma busca digitando <strong>Ctrl+F</strong> (Windows, Linux e
     </div>
 
 
-    <div id="pibid" data-email_principal="ufjf.pibid@gmail.com">
+    <div id="setores" title="pibid">
       <tr>
         <td colspan="2" style="vertical-align: middle;font-weight: bold">PIBID</td>
         <td style="vertical-align: middle;text-align: center"><a href="http://www.ufjf.br/pibid" rel="noopener" target="_blank">www.ufjf.br/pibid</a></td>
@@ -3238,20 +3222,14 @@ Se preferir, faça uma busca digitando <strong>Ctrl+F</strong> (Windows, Linux e
     </div>
 
 
-    <div id="proae" data-email_principal="secretaria.proae@ufjf.br">
+    <div id="setores" title="proae">
       <tr>
-        <td rowspan="8" style="vertical-align: middle;font-weight: bold">PROAE - PRÓ-REITORIA DE ASSISTÊNCIA ESTUDANTIL</td>
-      </tr>
-      <tr>
-        <td colspan="4" style="vertical-align: middle"><b>PROAE JUIZ DE FORA</b></td>
-        <td rowspan="7" style="vertical-align: middle;text-align: center">   <a href="https://www.instagram.com/proaeufjf/" rel="noopener" target="_blank"><img src="https://www2.ufjf.br/cat/wp-content/uploads/sites/19/2021/08/instagram-logo-3-300x300.png" alt="" width="20" height="20" class="alignnone size-medium wp-image-7342" /></a></td>
-      </tr>
-      <tr></tr>
+        <td rowspan="5" style="vertical-align: middle;font-weight: bold">PROAE - PRÓ-REITORIA DE ASSISTÊNCIA ESTUDANTIL</td>
         <td></td>
         <td style="vertical-align: middle;text-align: center"><a href="https://www.ufjf.br/proae" rel="noopener" target="_blank">www.ufjf.br/proae</a></td>
         <td style="vertical-align: middle;text-align: center">(32) 2102-3777<br>(32) 2102-3886<br>(32) 2102-3887</td>
         <td style="vertical-align: middle;text-align: center"><a href="mailto:secretaria.proae@ufjf.br">secretaria.proae@ufjf.br</a><br><a href="mailto:atendimentosocial.proae@ufjf.br">atendimentosocial.proae@ufjf.br</a><br><a href="mailto:pedagogico.proae@ufjf.br">pedagogico.proae@ufjf.br</a><br><a href="mailto:psicologia.proae@ufjf.br">psicologia.proae@ufjf.br</a><br><a href="mailto:moradia.proae@ufjf.br">moradia.proae@ufjf.br</a><br></td>
-        
+        <td rowspan="5" style="vertical-align: middle;text-align: center">   <a href="https://www.instagram.com/proaeufjf/" rel="noopener" target="_blank"><img src="https://www2.ufjf.br/cat/wp-content/uploads/sites/19/2021/08/instagram-logo-3-300x300.png" alt="" width="20" height="20" class="alignnone size-medium wp-image-7342" /></a></td>
       </tr>
       <tr>
         <td colspan="4" style="vertical-align: middle"><b>PROAE GOVERNADOR VALADARES</b></td>
@@ -3274,13 +3252,10 @@ Se preferir, faça uma busca digitando <strong>Ctrl+F</strong> (Windows, Linux e
         <td></td>
         <td style="vertical-align: middle;text-align: center"><a href="mailto:psicologia.gv@ufjf.br">psicologia.gv@ufjf.br</a></td>
       </tr>
-      <tr>
-      </tr>
-
     </div>
 
     
-    <div id="procult" data-email_principal="secretaria.procultura@ufjf.br">
+    <div id="setores" title="procult">
       <tr>
         <td rowspan="3" style="vertical-align: middle;font-weight: bold">PROCULT - PRÓ-REITORIA DE CULTURA</td>
         <td style="vertical-align: middle">Secretaria</td>
@@ -3299,7 +3274,7 @@ Se preferir, faça uma busca digitando <strong>Ctrl+F</strong> (Windows, Linux e
     </div>
 
 
-    <div id="procuradoria" data-email_principal="procuradoria@ufjf.br">
+    <div id="setores" title="procuradoria">
       <tr>
         <td colspan="2" style="vertical-align: middle;font-weight: bold">PROCURADORIA - ADVOCACIA GERAL DA UNIÃO (AGU)</td>
         <td></td>
@@ -3310,7 +3285,7 @@ Se preferir, faça uma busca digitando <strong>Ctrl+F</strong> (Windows, Linux e
     </div>
 
 
-    <div id="proex" data-email_principal="secretaria.extensao@ufjf.br"></div>
+    <div id="setores" title="proex">
       <tr>
         <td rowspan="7" style="vertical-align: middle;font-weight: bold">PROEX - PRÓ-REITORIA E EXTENSÃO</td>
         <td style="vertical-align: middle">Secretaria</td>
@@ -3354,7 +3329,7 @@ Se preferir, faça uma busca digitando <strong>Ctrl+F</strong> (Windows, Linux e
     </div>
 
 
-    <div id="progepe" data-email_principal="secretaria.progepe@ufjf.br">
+    <div id="setores" title="progepe">
       <tr>
         <td rowspan="21" style="vertical-align: middle;font-weight: bold">PROGEPE - PRÓ-REITORIA DE GESTÃO DE PESSOAS</td>
         <td style="vertical-align: middle">Secretaria da PROGEPE</td>
@@ -3483,7 +3458,7 @@ Se preferir, faça uma busca digitando <strong>Ctrl+F</strong> (Windows, Linux e
     </div>
 
 
-    <div id="prograd" data-email_principal="secretaria.prograd@ufjf.br">
+    <div id="setores" title="prograd">
       <tr>
         <td rowspan="8" style="vertical-align: middle;font-weight: bold">PROGRAD - PRÓ-REITORIA DE GRADUAÇÃO</td>
         <td style="vertical-align: middle">Secretaria</td>
@@ -3538,7 +3513,7 @@ Se preferir, faça uma busca digitando <strong>Ctrl+F</strong> (Windows, Linux e
     </div>
 
 
-    <div id="boa_vizinhanca" data-email_principal="boavizinhanca.extensao@ufjf.br">
+    <div id="setores" title="boa_vizinhanca">
       <tr>
         <td colspan="2" style="vertical-align: middle;font-weight: bold">PROGRAMA BOA VIZINHANÇA</td>
         <td style="vertical-align: middle;text-align: center"><a href="https://www.ufjf.br/bvlinguas/" rel="noopener" target="_blank">www.ufjf.br/bvlinguas</a><br><a href="https://www2.ufjf.br/proex" rel="noopener" target="_blank">www2.ufjf.br/proex</a></td>
@@ -3549,7 +3524,7 @@ Se preferir, faça uma busca digitando <strong>Ctrl+F</strong> (Windows, Linux e
     </div>
 
 
-    <div id="proinfra" data-email_principal="secretaria.proinfra@ufjf.br">
+    <div id="setores" title="proinfra">
       <tr>
         <td rowspan="39" style="vertical-align: middle;font-weight: bold">PROINFRA - PRÓ-REITORIA DE INFRAESTRUTURA E GESTÃO</td>
         <td style="vertical-align: middle">Secretaria</td>
@@ -3825,7 +3800,7 @@ Se preferir, faça uma busca digitando <strong>Ctrl+F</strong> (Windows, Linux e
     </div>
 
 
-    <div id="proplan" data-email_principal="planejamento@ufjf.br">
+    <div id="setores" title="proplan">
       <tr>
         <td rowspan="6" style="vertical-align: middle;font-weight: bold">PROPLAN - PRÓ-REITORIA DE PLANEJAMENTO, ORÇAMENTO E FINANÇAS</td>
         <td style="vertical-align: middle">Equipe Técnica - Secretaria</td>
@@ -3873,7 +3848,7 @@ Se preferir, faça uma busca digitando <strong>Ctrl+F</strong> (Windows, Linux e
     </div>
 
 
-    <div id="propp" data-email_principal="propp@ufjf.br">
+    <div id="setores" title="propp">
       <tr>
         <td rowspan="14" style="vertical-align: middle;font-weight: bold">PROPP - PRÓ-REITORIA DE PÓS-GRADUAÇÃO E PESQUISA</td>
         <td style="vertical-align: middle">Assuntos gerais</td>
@@ -3963,7 +3938,7 @@ Se preferir, faça uma busca digitando <strong>Ctrl+F</strong> (Windows, Linux e
     </div>
 
 
-    <div id="psicologia" data-email_principal="coord.psicologia@ufjf.br"> 
+    <div id="setores" title="psicologia"> 
       <tr>
         <td style="vertical-align: middle;font-weight: bold">PSICOLOGIA</td>
         <td style="vertical-align: middle">Coordenação do Curso</td>
@@ -3975,7 +3950,7 @@ Se preferir, faça uma busca digitando <strong>Ctrl+F</strong> (Windows, Linux e
     </div>
 
 
-    <div id="pu" data-email_principal="projeto.universalizacao@ufjf.br">
+    <div id="setores" title="pu">
       <tr>
         <td colspan="2" style="vertical-align: middle;font-weight: bold">PU - PROJETO DE UNIVERSALIZAÇÃO DA LÍNGUA ESTRANGEIRA</td>
         <td style="vertical-align: middle;text-align: center"><a href="https://www.ufjf.br/pu/" rel="noopener" target="_blank">www.ufjf.br/pu</a></td>
@@ -3986,7 +3961,7 @@ Se preferir, faça uma busca digitando <strong>Ctrl+F</strong> (Windows, Linux e
     </div>
 
 
-    <div id="servico-social" data-email_principal="secretaria.ssocial@ufjf.br">
+    <div id="setores" title="servico-social">
       <tr>
         <td rowspan="6" style="vertical-align: middle;font-weight: bold">SERVIÇO SOCIAL</td>
         <td style="vertical-align: middle">Secretaria</td>
@@ -4029,7 +4004,7 @@ Se preferir, faça uma busca digitando <strong>Ctrl+F</strong> (Windows, Linux e
     </div>
 
 
-    <div id="servicos-odontologicos" data-email_principal="">
+    <div id="setores" title="servicos-odontologicos">
       <tr>
         <td rowspan="10" style="vertical-align: middle;font-weight: bold">SERVIÇOS ODONTOLÓGICOS</td>
         <td style="vertical-align: middle">Atendimento Geral</td>
@@ -4095,7 +4070,7 @@ Se preferir, faça uma busca digitando <strong>Ctrl+F</strong> (Windows, Linux e
     </div>
 
 
-    <div id="quimica" data-email_principal="coord.quimicadiurno@ufjf.br">
+    <div id="setores" title="quimica">
       <tr>
         <td rowspan="5" style="vertical-align: middle;font-weight: bold">QUÍMICA</td>
         <td style="vertical-align: middle">Coordenação dos cursos de Licenciatura e Bacharelado em Química Integral</td>
@@ -4135,7 +4110,7 @@ Se preferir, faça uma busca digitando <strong>Ctrl+F</strong> (Windows, Linux e
     </div>
 
 
-    <div id="reitoria" data-email_principal="secretariageral.reitoria@ufjf.br">
+    <div id="setores" title="reitoria">
       <tr>
         <td rowspan="3" style="vertical-align: middle;font-weight: bold">REITORIA</td>
         <td style="vertical-align: middle">Secretaria Geral</td>
@@ -4161,7 +4136,7 @@ Se preferir, faça uma busca digitando <strong>Ctrl+F</strong> (Windows, Linux e
     </div>
 
 
-    <div id="restaurante-universitario" data-email_principal="ru.ufjf@gmail.com">
+    <div id="setores" title="restaurante-universitario">
       <tr>
         <td rowspan="2" style="vertical-align: middle;font-weight: bold">RESTAURANTE UNIVERSITÁRIO - RU</td>
         <td style="vertical-align: middle">RU Campus</td>
@@ -4177,7 +4152,7 @@ Se preferir, faça uma busca digitando <strong>Ctrl+F</strong> (Windows, Linux e
     </div>
 
 
-    <div id="scdp" data-email_principal="reservas.planejamento@ufjf.br">
+    <div id="setores" title="scdp">
       <tr>
         <td colspan="2" style="vertical-align: middle;font-weight: bold">SCDP - Sistema de Concessão de Diárias e Passagens</td>
         <td style="vertical-align: middle;text-align: center"><a href="http://www.ufjf.br/planejamento/scdp" rel="noopener" target="_blank">www.ufjf.br/planejamento/scdp</a></td>
@@ -4188,7 +4163,7 @@ Se preferir, faça uma busca digitando <strong>Ctrl+F</strong> (Windows, Linux e
     </div>
 
 
-    <div id="sei" data-email_principal="sei@ufjf.br">
+    <div id="setores" title="sei">
       <tr>
         <td colspan="2" style="vertical-align: middle;font-weight: bold">SEI - Sistema Eletrônico de Informações</td>
         <td style="vertical-align: middle;text-align: center"><a href="https://www.ufjf.br/sei" rel="noopener" target="_blank">www.ufjf.br/sei</a></td>
@@ -4199,7 +4174,7 @@ Se preferir, faça uma busca digitando <strong>Ctrl+F</strong> (Windows, Linux e
     </div>
 
 
-    <div id="sempre-vivo" data-email_principal="depto.anatomia@ufjf.br">
+    <div id="setores" title="sempre-vivo">
       <tr>
         <td style="vertical-align: middle;font-weight: bold">SEMPRE VIVO - Programa de doação voluntária de corpos para fins de ensino e pesquisa</td>
         <td style="vertical-align: middle">Departamento de Anatomia</td>
@@ -4211,7 +4186,7 @@ Se preferir, faça uma busca digitando <strong>Ctrl+F</strong> (Windows, Linux e
     </div>
 
 
-    <div id="sintufejuf" data-email_principal="comunicacao@sintufejuf.org.br">
+    <div id="setores" title="sintufejuf">
       <tr>
         <td style="vertical-align: middle;font-weight: bold">SINTUFEJUF - Sindicato dos trabalhadores técnico-administrativos em educação das instituições federais de ensino no município de Juiz de Fora</td>
         <td style="vertical-align: middle">Sede administrativa: Rua Santo Antônio, 309 - Centro (ao lado do Restaurante Universitário)</td>
@@ -4223,7 +4198,7 @@ Se preferir, faça uma busca digitando <strong>Ctrl+F</strong> (Windows, Linux e
     </div>
 
 
-    <div id="sistemas-de-informacao" data-email_principal="coordenacoes.ice@ufjf.br">
+    <div id="setores" title="sistemas-de-informacao">
       <tr>
         <td colspan="2" style="vertical-align: middle;font-weight: bold">SISTEMAS DE INFORMAÇÃO</td>
         <td style="vertical-align: middle;text-align: center"><a href="https://www.ufjf.br/si" rel="noopener" target="_blank">www.ufjf.br/si</a></td>
@@ -4234,7 +4209,7 @@ Se preferir, faça uma busca digitando <strong>Ctrl+F</strong> (Windows, Linux e
     </div>
 
 
-    <div id="turismo" data-email_principal="coordenacaoturufjf@gmail.com">
+    <div id="setores" title="turismo">
       <tr>
         <td colspan="2" style="vertical-align: middle;font-weight: bold">TURISMO</td>
         <td style="vertical-align: middle;text-align: center"><a href="http://www.ufjf.br/turismo" rel="noopener" target="_blank">www.ufjf.br/turismo</a></td>
@@ -4250,7 +4225,3 @@ Se preferir, faça uma busca digitando <strong>Ctrl+F</strong> (Windows, Linux e
 <span style="color: #333333">Catálogo elaborado pela Central de Atendimento da UFJF - Campus UFJF.</span>
 
 <span style="color: #333333">A página está em constante processo de atualização dos seus dados. Caso encontre algum erro ou queira complementar alguma informação ou então fazer alguma sugestão, favor enviar e-mail para <a style="color: #333333" href="mailto:faleconosco@ufjf.br?subject=Correção de contato setorial">faleconosco@ufjf.br</a> ou acesse nossa página de <a href="https://www2.ufjf.br/cat/faleconosco/">Contato</a>.</span>
-</body>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-
-</html>
